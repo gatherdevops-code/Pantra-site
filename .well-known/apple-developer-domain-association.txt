@@ -1,0 +1,5 @@
+TODO: Replace this with your actual Apple Developer Domain Association content.
+
+This file is used for Universal Links and App-Site Association for iOS apps.
+Visit https://developer.apple.com/documentation/xcode/supporting-associated-domains
+for more information on configuring this file.
