@@ -61,11 +61,6 @@ h3 {
   font-weight: 600;
 }
 
-h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
 p {
   margin-bottom: var(--spacing-sm);
   color: var(--text-medium);
@@ -269,13 +264,6 @@ header {
   margin-bottom: 0;
 }
 
-.testimonial-author {
-  font-weight: 600;
-  color: var(--sage-dark);
-  font-size: 0.95rem;
-  margin-bottom: 0;
-}
-
 /* Policy Pages */
 .policy-page {
   padding: var(--spacing-xl) 0;
@@ -365,10 +353,6 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.875rem;
-}
-
-.footer-bottom p {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Mobile Responsive */
