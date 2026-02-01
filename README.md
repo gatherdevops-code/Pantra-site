@@ -1,91 +1,119 @@
 # Pantra Marketing Site
 
-The official marketing and policy website for the Pantra app.
+The official marketing and policy website for Pantra, a consumer app that prevents food waste by scanning grocery receipts and tracking pantry inventory.
+
+## 🍃 About Pantra
+
+Pantra is a U.S.-based startup with a mission: **Keep food fresh, cut waste, save money.** We help households reduce food waste through:
+
+- **Receipt OCR scanning** - Automatically extract items from grocery receipts
+- **Expiration tracking** - Never let food spoil again
+- **Household sharing** - Keep everyone in sync
+- **Personalized reminders** - Smart notifications tailored to your habits
+- **AI pantry suggestions** - Meal ideas based on what you have
+
+**What we're NOT:** Pantra is not a delivery service, meal kit provider, recipe blog, or in-person pickup service.
 
 ## 📁 Site Structure
 
-- `index.html` - Main landing page with hero section, features, and CTAs
-- `privacy.html` - Privacy policy page
-- `terms.html` - Terms of service page
-- `styles.css` - Shared stylesheet with mobile-friendly, modern typography
-- `.well-known/apple-developer-domain-association.txt` - Apple domain association file
-
-## 🚀 Deploying to GitHub Pages
-
-### Quick Setup (Recommended)
-
-1. Go to your repository settings on GitHub
-2. Navigate to **Settings** → **Pages**
-3. Under "Source", select **Deploy from a branch**
-4. Choose the `main` branch (or your default branch)
-5. Select the root folder `/` as the source
-6. Click **Save**
-
-Your site will be published at: `https://[username].github.io/Pantra-site/`
-
-### Custom Domain (Optional)
-
-If you want to use a custom domain:
-
-1. In the GitHub Pages settings, enter your custom domain (e.g., `pantra.com`)
-2. Add a `CNAME` file to the repository root containing your domain name
-3. Configure your DNS provider:
-   - For apex domain (pantra.com): Add A records pointing to GitHub's IP addresses
-   - For subdomain (www.pantra.com): Add a CNAME record pointing to `[username].github.io`
-
-GitHub's IP addresses for A records:
-```
-185.199.108.153
-185.199.109.153
-185.199.110.153
-185.199.111.153
-```
-
-### Verification
-
-After deployment:
-- Visit your GitHub Pages URL
-- Verify all pages load correctly (index, privacy, terms)
-- Test on mobile devices to confirm responsive design
-- Check that all internal links work
-
-## 🛠️ Local Development
-
-To preview the site locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/[username]/Pantra-site.git
-   cd Pantra-site
-   ```
-
-2. Open `index.html` in your browser, or use a local server:
-   ```bash
-   # Using Python 3
-   python -m http.server 8000
-   
-   # Using Node.js
-   npx http-server
-   ```
-
-3. Visit `http://localhost:8000` in your browser
-
-## 📝 Updating Content
-
-- **Hero section**: Edit the `<section class="hero">` in `index.html`
-- **Features**: Modify the feature cards in the `<section id="features">` 
-- **Privacy Policy**: Update sections in `privacy.html`
-- **Terms of Service**: Update sections in `terms.html`
-- **Styling**: Customize colors and spacing in `styles.css` (see CSS variables at the top)
-- **Apple Domain Association**: Replace the TODO text in `.well-known/apple-developer-domain-association.txt` with your actual Apple Developer content
+- `index.html` - Main landing page with hero, features (3-column grid), testimonials, and CTAs
+- `privacy.html` - Privacy policy detailing how we handle receipt images, account info, and notifications
+- `terms.html` - Terms of service covering user obligations, acceptable use, and liability
+- `styles.css` - Warm, sustainable design with sage green and soft cream palette
+- `.well-known/apple-developer-domain-association.txt` - Apple domain verification placeholder
 
 ## 🎨 Design Features
 
-- **Mobile-first responsive design** - Works great on all devices
-- **Modern typography** - Clean, readable system fonts
-- **Accessible color contrast** - WCAG compliant colors
-- **Fast loading** - No external dependencies, pure HTML/CSS
-- **SEO-friendly** - Proper meta tags and semantic HTML
+- **Warm Color Palette:** Sage green (#7c9473) and soft cream (#f5f1e8)
+- **Google Fonts:** Manrope (headings) + Work Sans (body text)
+- **Mobile-First:** Responsive breakpoints at 768px and 480px
+- **Sustainable Aesthetic:** Reflects our environmental mission
+- **Zero External Dependencies** (except Google Fonts)
+
+## 🚀 Deploying to GitHub Pages
+
+### Quick Setup
+
+1. Go to your repository **Settings** → **Pages**
+2. Under "Source", select **Deploy from a branch**
+3. Choose your branch (e.g., `main`) and select the root folder `/`
+4. Click **Save**
+
+Your site will be live at: `https://[username].github.io/Pantra-site/`
+
+### Custom Domain (Optional)
+
+1. In GitHub Pages settings, enter your custom domain
+2. Add a `CNAME` file to the repository root with your domain
+3. Configure DNS at your provider:
+   - **A records** (for apex domain like `pantra.com`):
+     ```
+     185.199.108.153
+     185.199.109.153
+     185.199.110.153
+     185.199.111.153
+     ```
+   - **CNAME record** (for `www.pantra.com`): Point to `[username].github.io`
+
+## 🛠️ Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/[username]/Pantra-site.git
+cd Pantra-site
+
+# Start a local server
+python3 -m http.server 8000
+# OR
+npx http-server
+
+# Visit in browser
+open http://localhost:8000
+```
+
+## 📝 Updating Content
+
+### Landing Page
+- **Hero headline:** Edit `<h1>` in the `.hero` section
+- **Features:** Modify feature cards in `#features` and `.features-alt` sections
+- **Testimonials:** Update quotes in the `.testimonials` section
+- **CTAs:** Change button text/links in `.cta-buttons`
+
+### Privacy Policy
+Customize sections related to:
+- Receipt image handling
+- Account data collection
+- Notification preferences
+- Data sharing policies
+
+### Terms of Service
+Update sections for:
+- User obligations
+- Acceptable use
+- Service scope (what Pantra is/isn't)
+- Liability limitations
+
+### Styling
+Edit CSS custom properties in `styles.css`:
+```css
+:root {
+  --sage-green: #7c9473;
+  --cream: #f5f1e8;
+  /* ... */
+}
+```
+
+### Apple Domain Verification
+Replace the TODO content in `.well-known/apple-developer-domain-association.txt` with your actual Apple Developer Domain Association file.
+
+## ✅ Pre-Deployment Checklist
+
+- [ ] Replace Apple domain association TODO with actual content
+- [ ] Test all internal links
+- [ ] Verify mobile responsiveness
+- [ ] Check color contrast for accessibility
+- [ ] Update contact email addresses if needed
+- [ ] Test on multiple browsers
 
 ## 📄 License
 
