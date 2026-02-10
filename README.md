@@ -33,14 +33,30 @@ Pantra is a U.S.-based startup with a mission: **Keep food fresh, cut waste, sav
 
 ## 🚀 Deploying to GitHub Pages
 
-### Quick Setup
+### Automated Deployment
+
+This site uses GitHub Actions to automatically deploy to GitHub Pages. The deployment workflow:
+
+- **Triggers automatically** on pushes to `main` branch
+- Can be **manually triggered** from the Actions tab
+- Deploys the entire site to GitHub Pages
+
+**Setup Required (One-time):**
+
+1. Go to your repository **Settings** → **Pages**
+2. Under "Source", select **GitHub Actions**
+3. The workflow will automatically deploy on the next push
+
+Your site will be live at: `https://gatherdevops-code.github.io/Pantra-site/`
+
+### Manual Deployment (Alternative)
+
+If you prefer manual deployment instead:
 
 1. Go to your repository **Settings** → **Pages**
 2. Under "Source", select **Deploy from a branch**
 3. Choose your branch (e.g., `main`) and select the root folder `/`
 4. Click **Save**
-
-Your site will be live at: `https://[username].github.io/Pantra-site/`
 
 ### Custom Domain (Optional)
 
