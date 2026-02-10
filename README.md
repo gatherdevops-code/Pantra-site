@@ -33,44 +33,27 @@ Pantra is a U.S.-based startup with a mission: **Keep food fresh, cut waste, sav
 
 ## 🚀 Deploying to GitHub Pages
 
-### Automated Deployment
+**📖 Complete Setup Guide: See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions**
 
-This site uses GitHub Actions to automatically deploy to GitHub Pages. The deployment workflow:
+### Quick Setup (One-time)
 
-- **Triggers automatically** on pushes to `main` branch
-- Can be **manually triggered** from the Actions tab
-- Deploys the entire site to GitHub Pages
-
-**Setup Required (One-time):**
-
-1. Go to your repository **Settings** → **Pages**
+1. Go to repository **Settings** → **Pages**
 2. Under "Source", select **GitHub Actions**
-3. The workflow will automatically deploy on the next push
+3. The workflow will automatically deploy!
 
 Your site will be live at: `https://gatherdevops-code.github.io/Pantra-site/`
 
-### Manual Deployment (Alternative)
+### Automated Deployment
 
-If you prefer manual deployment instead:
+This site uses GitHub Actions to automatically deploy to GitHub Pages:
 
-1. Go to your repository **Settings** → **Pages**
-2. Under "Source", select **Deploy from a branch**
-3. Choose your branch (e.g., `main`) and select the root folder `/`
-4. Click **Save**
+- **Triggers automatically** on pushes to `main` branch
+- Can be **manually triggered** from the Actions tab
+- Deploys in ~1-2 minutes
 
 ### Custom Domain (Optional)
 
-1. In GitHub Pages settings, enter your custom domain
-2. Add a `CNAME` file to the repository root with your domain
-3. Configure DNS at your provider:
-   - **A records** (for apex domain like `pantra.com`):
-     ```
-     185.199.108.153
-     185.199.109.153
-     185.199.110.153
-     185.199.111.153
-     ```
-   - **CNAME record** (for `www.pantra.com`): Point to `[username].github.io`
+See [DEPLOYMENT.md](DEPLOYMENT.md) for complete custom domain setup instructions.
 
 ## 🛠️ Local Development
 
