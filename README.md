@@ -17,6 +17,7 @@ Pantra is a U.S.-based startup with a mission: **Keep food fresh, cut waste, sav
 ## 📁 Site Structure
 
 - `index.html` - Main landing page with hero, features (3-column grid), testimonials, and CTAs
+- `support.html` - Support page with contact information, FAQs, and help resources
 - `privacy.html` - Privacy policy detailing how we handle receipt images, account info, and notifications
 - `terms.html` - Terms of service covering user obligations, acceptable use, and liability
 - `styles.css` - Warm, sustainable design with sage green and soft cream palette
@@ -32,28 +33,32 @@ Pantra is a U.S.-based startup with a mission: **Keep food fresh, cut waste, sav
 
 ## 🚀 Deploying to GitHub Pages
 
+**📖 Complete Setup Guide: See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions**
+
 ### Quick Setup
 
-1. Go to your repository **Settings** → **Pages**
-2. Under "Source", select **Deploy from a branch**
-3. Choose your branch (e.g., `main`) and select the root folder `/`
-4. Click **Save**
+**Step 1: Merge to Main Branch**
+- Merge your PR to `main` (deployments only work from `main` branch)
 
-Your site will be live at: `https://[username].github.io/Pantra-site/`
+**Step 2: Enable GitHub Pages**
+1. Go to repository **Settings** → **Pages**
+2. Under "Source", select **GitHub Actions**
+3. The workflow will automatically deploy on the next push to `main`!
+
+Your site will be live at: `https://gatherdevops-code.github.io/Pantra-site/`
+
+### Automated Deployment
+
+This site uses GitHub Actions to automatically deploy to GitHub Pages:
+
+- **Triggers automatically** on pushes to `main` branch ONLY
+- Can be **manually triggered** from the Actions tab (must select `main` branch)
+- Deploys in ~1-2 minutes
+- **Feature branches cannot deploy** (by design for security)
 
 ### Custom Domain (Optional)
 
-1. In GitHub Pages settings, enter your custom domain
-2. Add a `CNAME` file to the repository root with your domain
-3. Configure DNS at your provider:
-   - **A records** (for apex domain like `pantra.com`):
-     ```
-     185.199.108.153
-     185.199.109.153
-     185.199.110.153
-     185.199.111.153
-     ```
-   - **CNAME record** (for `www.pantra.com`): Point to `[username].github.io`
+See [DEPLOYMENT.md](DEPLOYMENT.md) for complete custom domain setup instructions.
 
 ## 🛠️ Local Development
 
