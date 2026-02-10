@@ -17,6 +17,7 @@ Pantra is a U.S.-based startup with a mission: **Keep food fresh, cut waste, sav
 ## 📁 Site Structure
 
 - `index.html` - Main landing page with hero, features (3-column grid), testimonials, and CTAs
+- `support.html` - Support page with contact information, FAQs, and help resources
 - `privacy.html` - Privacy policy detailing how we handle receipt images, account info, and notifications
 - `terms.html` - Terms of service covering user obligations, acceptable use, and liability
 - `styles.css` - Warm, sustainable design with sage green and soft cream palette
